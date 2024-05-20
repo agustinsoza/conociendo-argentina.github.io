@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceder</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.svg" alt="">  
+            </a>
+        </div>
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Provincias</a>
+                    <ul class="desplegable">
+                        <li><a href="provincias/buenos_aires.html">Buenos Aires</a></li>
+                        <li><a href="provincias/catamarca.html">Catamarca</a></li>
+                        <li><a href="provincias/chaco.html">Chaco</a></li>
+                        <li><a href="provincias/chubut.html">Chubut</a></li>
+                        <li><a href="provincias/cordoba.html">Cordoba</a></li>
+                        <li><a href="provincias/corrientes.html">Corrientes</a></li>
+                        <li><a href="provincias/entre_rios.html">Entre Ríos</a></li>
+                        <li><a href="provincias/formosa.html">Formosa</a></li>
+                        <li><a href="provincias/jujuy.html">Jujuy</a></li>
+                        <li><a href="provincias/la_pampa.html">La Pampa</a></li>
+                        <li><a href="provincias/la_rioja.html">La Rioja</a></li>
+                        <li><a href="provincias/mendoza.html">Mendoza</a></li>
+                        <li><a href="provincias/misiones.html">Misiones</a></li>
+                        <li><a href="provincias/neuquen.html">Neuquén</a></li>
+                        <li><a href="provincias/rio_negro.html">Río Negro</a></li>
+                        <li><a href="provincias/salta.html">Salta</a></li>
+                        <li><a href="provincias/san_juan.html">San Juan</a></li>
+                        <li><a href="provincias/san_luis.html">San Luis</a></li>
+                        <li><a href="provincias/santa_cruz.html">Santa Cruz</a></li>
+                        <li><a href="provincias/santa_fe.html">Santa Fe</a></li>
+                        <li><a href="provincias/s_del_estero.html">S. del Estero</a></li>
+                        <li><a href="provincias/tierra_del_fuego.html">Tierra del Fuego</a></li>
+                        <li><a href="provincias/tucuman.html">Tucumán</a></li>
+                    </ul>
+                <li><a href="#">Acceder</a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="main-login">
+        <div class="img-login" id="login">
+        </div>
+        <div class="login">
+            <h2>¡Ingresá y compartinos tus lugares favoritos!</h2>
+            <form action="" class="formulario" id="formulario-login">
+
+                <div class="formulario_grupo" id="grupo_usuario-login">
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="usuario-login" id="user_log" placeholder="Usuario">
+                    </div>
+                </div>
+
+                <div class="formulario_grupo" id="grupo_pwd-login">
+                    <div class="formulario_grupo-input">
+                        <input type="password" class="formulario_input" name="pwd-login" id="pwd_log" placeholder="Contraseña">
+                    </div>
+                </div>
+                
+                <div class="formulario_grupo formulario_btn-login">
+                    <button type="submit" class="formulario_btn">Ingresar</button>
+                </div>
+            </form>
+            
+            <h4>No tenes cuenta? <a href="#registro">Registrate!</a></h4>
+            <br><br>
+            <h3 id="mensaje_log-error" class="formulario_login-error"><i class="fa-solid fa-triangle-exclamation"></i> Usuario o contraseña incorrecto!</h3>
+        </div>
+        <div class="img-registro" id="registro">
+        </div>
+        <div class="registro">
+            <h2>¡Registrate!</h2>
+            <form action="" class="formulario" id="formulario">
+
+                <div class="formulario_grupo" id="grupo_nombre">
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Nombres y Apellidos">
+                    </div>
+                    <h6 class="formulario_input-error">Los nombres o apellidos no pueden contener números o símbolos.</h6>
+                </div>
+
+                <div class="formulario_grupo" id="grupo_usuario">
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" id="usuario" name="usuario" placeholder="Usuario">
+                    </div>
+                    <h6 class="formulario_input-error">El usuario debe tener de 4 a 16 dígitos y solo puede contener letras, números y guión bajo.</h6>
+                </div>
+
+                <div class="formulario_grupo" id="grupo_pwd">
+                    <div class="formulario_grupo-input">
+                        <input type="password" class="formulario_input" name="pwd" id="pwd" placeholder="Contraseña">
+                    </div>
+                    <h6 class="formulario_input-error">La contraseña debe tener mayúsculas, minúsculas, números y caracteres.</h6>
+                </div>
+
+                <div class="formulario_grupo" id="grupo_pwd2">
+                    <div class="formulario_grupo-input">
+                        <input type="password" class="formulario_input" name="pwd2" id="pwd2" placeholder="Repetir contraseña">
+                    </div>
+                    <h6 class="formulario_input-error">Ambas contraseñas deben ser iguales.</h6>
+                </div>
+
+                <div class="formulario_grupo" id="grupo_correo">
+                    <div class="formulario_grupo-input">
+                        <input type="email" class="formulario_input" name="correo" id="correo" placeholder="Correo Electrónico">
+                    </div>
+                    <h6 class="formulario_input-error">Ingrese un correo electrónico válido.</h6>
+                </div>
+
+                <div class="formulario_grupo" id="grupo_terminos">
+                    <label class="formulario_label">
+                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los <a href="terminos.html">Términos y Condiciones</a>.
+                    </label>
+                </div>
+
+                <div class="formulario_grupo formulario_btn-registrar">
+                    <button type="submit" class="formulario_btn">Registrar</button>
+                </div>
+            </form>
+            
+            <h4>Ya tenés cuenta? <a href="#login">Ingresá!</a></h4>
+            <br>
+            <h3 id="mensaje_error" class="formulario_registro-error"><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor, rellene el formulario correctamente!</h3>
+            <h3 id="mensaje_check" class="formulario_registro-check"><i class="fa-regular fa-circle-check"></i> Registrado correctamente!</h3>
+        </div>
+        
+    </main>
+
+    <script src="https://kit.fontawesome.com/5f172312ee.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
