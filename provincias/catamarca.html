@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catamarca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f172312ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.svg" alt="">
+            </a>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Provincias</a>
+                    <ul class="desplegable">
+                        <li><a href="buenos_aires.html">Buenos Aires</a></li>
+                        <li><a href="catamarca.html">Catamarca</a></li>
+                        <li><a href="chaco.html">Chaco</a></li>
+                        <li><a href="chubut.html">Chubut</a></li>
+                        <li><a href="cordoba.html">Cordoba</a></li>
+                        <li><a href="corrientes.html">Corrientes</a></li>
+                        <li><a href="entre_rios.html">Entre Ríos</a></li>
+                        <li><a href="formosa.html">Formosa</a></li>
+                        <li><a href="jujuy.html">Jujuy</a></li>
+                        <li><a href="la_pampa.html">La Pampa</a></li>
+                        <li><a href="la_rioja.html">La Rioja</a></li>
+                        <li><a href="mendoza.html">Mendoza</a></li>
+                        <li><a href="misiones.html">Misiones</a></li>
+                        <li><a href="neuquen.html">Neuquén</a></li>
+                        <li><a href="rio_negro.html">Río Negro</a></li>
+                        <li><a href="salta.html">Salta</a></li>
+                        <li><a href="san_juan.html">San Juan</a></li>
+                        <li><a href="san_luis.html">San Luis</a></li>
+                        <li><a href="santa_cruz.html">Santa Cruz</a></li>
+                        <li><a href="santa_fe.html">Santa Fe</a></li>
+                        <li><a href="s_del_estero.html">S. del Estero</a></li>
+                        <li><a href="tierra_del_fuego.html">Tierra del Fuego</a></li>
+                        <li><a href="tucuman.html">Tucumán</a></li>
+                    </ul>
+                <li><a href="../acceder.html">Acceder</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header-provincia catamarca">
+        <div class="titulo-provincia">
+            <h1><i class="fa-solid fa-location-dot"></i> Catamarca</h1>
+        </div>
+    </header>
+    <main class="main-provincia">
+        <div class="botones" id="botones">
+            <button id="btn1" onclick="mostrar1()">Descripción</button>
+            <button id="btn2" onclick="mostrar2()">Galería</button>
+            <button id="btn3" onclick="mostrar3()">Dónde queda?</button>
+            <button id="btn4" onclick="mostrar4()">Clima</button>
+        </div>
+        <div class="contenido">
+            <div id="contenido1">
+                <p>
+                    Catamarca, provincia argentina en el noroeste, cautiva con su riqueza histórica y natural. Su capital, San Fernando del
+                    Valle de Catamarca, resplandece con su arquitectura colonial y su vibrante cultura folclórica. La provincia es hogar de
+                    paisajes impresionantes, desde el imponente Nevado de Aconquija hasta los valles fértiles de Ambato y Santa María. Sus
+                    termas y spas naturales son destinos de relax y salud buscados por turistas y lugareños. La producción agrícola de
+                    olivos y vides destaca en su economía, junto con la minería y la artesanía tradicional. Catamarca ofrece una experiencia
+                    auténtica de historia, naturaleza y hospitalidad.
+                </p>
+            </div>
+            <div class="ful-img" id="fulImgBox">
+                <img src="img/catamarca/img2.jpeg" alt="" id="fulImg">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div id="contenido2">
+                <img src="img/catamarca/img1.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img2.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img3.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img4.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img5.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img6.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img7.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img8.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img9.jpeg" onclick="openImg(this.src)" alt="">
+                <img src="img/catamarca/img10.jpeg" onclick="openImg(this.src)" alt="">
+            </div>
+            <div id="contenido3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4303619.012489486!2d-67.22341731442313!3d-27.653000098207823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94205dc5020ad4bd%3A0x3257c3237d6cc2dc!2sCatamarca!5e0!3m2!1ses-419!2sar!4v1715858998144!5m2!1ses-419!2sar" width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contenido4">
+                <div class="clima" id="cont_d1110fd680feb6738dfdae863244e0fd"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/d1110fd680feb6738dfdae863244e0fd"></script></div>
+            <div id="contenido5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107195.89334040215!2d-68.85562654714896!3d-32.901561156689844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1715697483990!5m2!1ses-419!2sar"
+                    width="1200" height="495" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="logo-footer">
+            <img src="../img/logo-footer.svg" alt="">
+        </div>
+        <div class="redes">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <h6><i class="fa-regular fa-copyright"></i> Derechos reservados para ConociendoArgentina</h6>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
